@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css?family=Hellix:400");
+
+body {
+  text-align: center;
+  background: linear-gradient(141deg, #ccc 25%, #eee 40%, #ddd 55%);
+  color: #65665c;
+  font-family: "Hellix";
+  font-weight: 400;
+  font-size: 32px;
+  padding-top: 40vh;
+  height: 100vh;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+.container {
+  position: relative;
+  height: 50vh;
+  width: 50vw;
+}
+
+.random-pos {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+.btn {
+  display: block;
+  color: #fff;
+  background: rgb(7, 197, 185);
+  border: 1px solid rgb(7, 197, 185);
+  box-shadow: none;
+  padding: 9px 20px;
+  border-radius: 6px;
+  font-size: 18px;
+}
+.sentence {
+  width: 100%;
+}
+.sentence.anim {
+  animation: slidein 1.5s;
+}
+@keyframes showup {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: -800px;
+  }
+  20% {
+    margin-left: -800px;
+  }
+  35% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    width: 0px;
+  }
+  20% {
+    opacity: 1;
+    width: 0px;
+  }
+  30% {
+    width: 355px;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 355px;
+  }
+}
